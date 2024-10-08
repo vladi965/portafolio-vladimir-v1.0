@@ -1,0 +1,183 @@
+{
+  "main": {
+    "titleHelp": "¿En qué te puedo ayudar?",
+    "title": "Vladimir",
+    "secondTitle": "Desarrollador Frontend",
+    "description": "Especializado en la creación y desarrollo de aplicaciones web y móviles.",
+    "image": "img-perfil.png",
+    "imageLogo": "logo-vladimir.png",
+    "icon": "img-mano.png",
+    "iconSun": "icon-sun.svg",
+    "website": "https://drive.google.com/file/d/1ZyyDaCfojNPAVCCh-_8za1ei09Ztf-nB/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/file/d/1ZyyDaCfojNPAVCCh-_8za1ei09Ztf-nB/view?usp=sharing",
+    "imgJavaScript": "javascript.png",
+    "imgNextjs": "nextjs.png",
+    "imgHtml": "html.png",
+    "imgCss": "css.png",
+    "imgReact": "reactjs.png",
+    "social": [
+      {
+        "name": "linkedln",
+        "title": "Mi Linkedln",
+        "url": "https://www.linkedin.com/in/vladimir-sanchez-astoray/",
+        "image": "icon-linkedln.svg"
+      },
+      {
+        "name": "github",
+        "title": "Mi Github",
+        "url": "https://github.com/vladi965",
+        "image": "icon-github.svg"
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "image": "###",
+    "bio": "Soy Vladimir pero mis amigos me dicen Vladii. Me considero una persona apasionada por las tecnológias y la programación, mis stack favoritos son JavaScript, React, React Native, NextJS, Android y MySQL. En mis tiempos libres me dedico a crear proyectos personales y compartir con la comunidad de programadores.",
+    "imagePerfil": "###"
+  },
+  "work": {
+    "title": "Experiencia",
+    "image": "icon-experience.svg",
+    "experience": [
+      {
+        "title": "Freelance",
+        "company": "-",
+        "years": "Ago 2022 - Actualmente",
+        "description": "Desarrollo de páginas web, diseño y maquetación responsive aplicando HTML, CSS y JavaScript. Implementación de libreria como React y en framework de estilos TailwindCSS para crear interfaces interactivas. Optimizando el rendimiento y carga de páginas, así como integración de APIs para mejorar la comunicación entre el Front y Back. Además realice la colaboración con clientes para entender sus necesidades y garantizar un desarrollo de calidad y mejora en la interfaz de usuario (UI) y experiencia (UX)."
+      },
+      {
+        "title": "Locador de Servicios",
+        "company": "Banco de la Nación",
+        "years": "Set 2023 - Mar 2024",
+        "description": "Desarrollé un análisis de la situación actual, mapeo y segmentación de contenidos, y la estructura jerárquica visual de la plataforma de Transparencia BN. Diseñé prototipos para versiones de escritorio y móvil, y desarrollé plantillas utilizando HTML, CSS3 y JavaScript, asegurando un diseño responsive adaptado a diversos dispositivos moviles, tablet y laptop, ademas de la implementación de SEO en las plantillas y elaboré informes sobre la mejora de plataforma y la carga de información en el nuevo sitio."
+      },
+      {
+        "title": "Practicante",
+        "company": "Banco de la Nación",
+        "years": "Set 2022 - Set 2023",
+        "description": "Publicación y actualización de noticias y canales de atención en la web del Banco. Mejora la plataforma de Noticias en modo responsive adaptado a dispositivos móviles. Apoyo en la migración de productos y servicios del Banco de la Nación a Gob.pe, coordinando con las distintas áreas para validar la información y cargar los servicios y/o productos en el CMS de Gob.pe."
+      }
+    ]
+  },
+  "project": {
+    "skilltitle": "Proyectos",
+    "image": "icon-proyects.svg",
+    "content": [
+      {
+        "titleProject": "VirtualR",
+        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "image": "saas-with-ai.png",
+        "nameOneSkill": "Vite",
+        "iconOneSkill": "icon-vite.png",
+        "nameTwoSkill": "React",
+        "iconTwoSkill": "icon-react.png",
+        "nameThreeSkill": "TailwindCSS",
+        "iconThreeSkill": "icon-tailwindcss.png",
+        "codeTitle": "Code",
+        "codeImage": "icon-github.svg",
+        "codeImageHover": "icon-github-green.svg",
+        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "previewTitle": "Preview",
+        "previewImage": "icon-preview.svg",
+        "previewImageHover": "icon-preview-green.svg",
+        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+      },
+      {
+        "titleProject": "Portal de Transparencia BN",
+        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "image": "edusity.png",
+        "nameOneSkill": "HTML5",
+        "iconOneSkill": "icon-html.png",
+        "nameTwoSkill": "CSS3",
+        "iconTwoSkill": "icon-css.png",
+        "nameThreeSkill": "JavaScript",
+        "iconThreeSkill": "icon-javascript.png",
+        "codeTitle": "Code",
+        "codeImage": "icon-github.svg",
+        "codeImageHover": "icon-github-green.svg",
+        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "previewTitle": "Preview",
+        "previewImage": "icon-preview.svg",
+        "previewImageHover": "icon-preview-green.svg",
+        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+      },
+      {
+        "titleProject": "Portal de Transparencia BN",
+        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "image": "virtualR.png",
+        "nameOneSkill": "HTML5",
+        "iconOneSkill": "icon-html.png",
+        "nameTwoSkill": "CSS3",
+        "iconTwoSkill": "icon-css.png",
+        "nameThreeSkill": "JavaScript",
+        "iconThreeSkill": "icon-javascript.png",
+        "codeTitle": "Code",
+        "codeImage": "icon-github.svg",
+        "codeImageHover": "icon-github-green.svg",
+        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "previewTitle": "Preview",
+        "previewImage": "icon-preview.svg",
+        "previewImageHover": "icon-preview-green.svg",
+        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+      },
+      {
+        "titleProject": "Portal de Transparencia BN",
+        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "image": "transparencia.png",
+        "nameOneSkill": "HTML5",
+        "iconOneSkill": "icon-html.png",
+        "nameTwoSkill": "CSS3",
+        "iconTwoSkill": "icon-css.png",
+        "nameThreeSkill": "JavaScript",
+        "iconThreeSkill": "icon-javascript.png",
+        "codeTitle": "Code",
+        "codeImage": "icon-github.svg",
+        "codeImageHover": "icon-github-green.svg",
+        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "previewTitle": "Preview",
+        "previewImage": "icon-preview.svg",
+        "previewImageHover": "icon-preview-green.svg",
+        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+      },
+      {
+        "titleProject": "Portal de Transparencia BN",
+        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "image": "floreria-encantada.png",
+        "nameOneSkill": "HTML5",
+        "iconOneSkill": "icon-html.png",
+        "nameTwoSkill": "CSS3",
+        "iconTwoSkill": "icon-css.png",
+        "nameThreeSkill": "JavaScript",
+        "iconThreeSkill": "icon-javascript.png",
+        "codeTitle": "Code",
+        "codeImage": "icon-github.svg",
+        "codeImageHover": "icon-github-green.svg",
+        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "previewTitle": "Preview",
+        "previewImage": "icon-preview.svg",
+        "previewImageHover": "icon-preview-green.svg",
+        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+      },
+      {
+        "titleProject": "Portal de Transparencia BN",
+        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "image": "ag-transporte.png",
+        "nameOneSkill": "HTML5",
+        "iconOneSkill": "icon-html.png",
+        "nameTwoSkill": "CSS3",
+        "iconTwoSkill": "icon-css.png",
+        "nameThreeSkill": "JavaScript",
+        "iconThreeSkill": "icon-javascript.png",
+        "codeTitle": "Code",
+        "codeImage": "icon-github.svg",
+        "codeImageHover": "icon-github-green.svg",
+        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "previewTitle": "Preview",
+        "previewImage": "icon-preview.svg",
+        "previewImageHover": "icon-preview-green.svg",
+        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+      }
+    ]
+  }
+}
