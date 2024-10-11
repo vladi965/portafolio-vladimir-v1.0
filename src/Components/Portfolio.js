@@ -60,7 +60,11 @@ const Portfolio = ({ data }) => {
               <div className="content-icons">
                 <ul id="nav-code">
                   <li>
-                    <a href={content.codeUrl} title={content.codeTitle}>
+                    <a
+                      target="_blank"
+                      href={content.codeUrl}
+                      title={content.codeTitle}
+                    >
                       <img
                         className="icons-general disable"
                         src={codeImage}
@@ -75,7 +79,11 @@ const Portfolio = ({ data }) => {
                     </a>
                   </li>
                   <li>
-                    <a href={content.previewUrl} title={content.previewTitle}>
+                    <a
+                      target="_blank"
+                      href={content.previewUrl}
+                      title={content.previewTitle}
+                    >
                       <img
                         className="icons-general disable"
                         src={previewImage}

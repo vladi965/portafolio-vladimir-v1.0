@@ -25,7 +25,7 @@ const WorkExperience = ({ data }) => {
     });
   }
   return (
-    <div id="work" className="row">
+    <section id="work" className="row">
       <div className="work-item">
         <div className="work-content-title">
           <img className="icons-general" src={iconWork} alt="icono work" />
@@ -33,7 +33,7 @@ const WorkExperience = ({ data }) => {
         </div>
         <div className="work-experience-info">{experience}</div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import PreviewAbout from "./Components/PreviewAbout";
 import WorkExperience from "./Components/WorkExperience";
 import Portfolio from "./Components/Portfolio";
 import About from "./Components/About";
@@ -26,10 +25,9 @@ const App = () => {
       <Header data={resumeData.main} />
       <Portfolio data={resumeData.project} />
       <WorkExperience data={resumeData.work} />
-      {/*  <PreviewAbout data={resumeData.main} />
-      <About data={resumeData.main} />
+      <About data={resumeData.about} />
       <Contact data={resumeData.main} />
-      <Footer data={resumeData.main} /> */}
+      <Footer data={resumeData.main} />
     </div>
   );
 };

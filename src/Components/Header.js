@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = ({ data }) => {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   if (data) {
     var perfilImg = "images/" + data.image;
     var imageLogo = "images/" + data.imageLogo;
@@ -39,35 +68,35 @@ const Header = ({ data }) => {
         <div className="content-image">
           <img src={imageLogo} alt="Logo Vladimir" />
         </div>
-        {/* <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
         <a className="mobile-btn" href="#home" title="Hide navigation">
           Hide navigation
-        </a> */}
+        </a>
 
         <ul id="nav" className="nav">
-          <li className="current">
+          <li className={activeSection === "home" ? "current" : ""}>
             <a className="smoothscroll" href="#home">
               Home
             </a>
           </li>
-          <li>
+          <li className={activeSection === "portfolio" ? "current" : ""}>
+            <a className="smoothscroll" href="#portfolio">
+              Proyectos
+            </a>
+          </li>
+          <li className={activeSection === "work" ? "current" : ""}>
+            <a className="smoothscroll" href="#work">
+              Experiencia
+            </a>
+          </li>
+          <li className={activeSection === "about" ? "current" : ""}>
             <a className="smoothscroll" href="#about">
               Sobre Mí
             </a>
           </li>
-          <li>
-            <a className="smoothscroll" href="#portfolio">
-              Experiencia
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#testimonials">
-              Proyectos
-            </a>
-          </li>
-          <li>
+          <li className={activeSection === "contact" ? "current" : ""}>
             <a className="smoothscroll" href="#contact">
               Contacto
             </a>

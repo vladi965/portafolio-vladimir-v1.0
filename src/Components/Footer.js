@@ -2,11 +2,18 @@ import React from "react";
 
 const Footer = ({ data }) => {
   if (data) {
-    var networks = data.social.map(function (network) {
+    var iconMail = "images/iconos/" + data.iconEmail;
+    var imagePerfil = "images/" + data.image;
+    var networks = data.network.map(function (network) {
+      var imgRSociales = "images/iconos/" + network.image;
       return (
         <li key={network.name}>
           <a href={network.url}>
-            <i className={network.className}></i>
+            <img
+              className="img-networks-icon"
+              src={imgRSociales}
+              alt={network.title}
+            />
           </a>
         </li>
       );
@@ -16,22 +23,31 @@ const Footer = ({ data }) => {
   return (
     <footer>
       <div className="row">
-        <div className="twelve columns">
-          <ul className="social-links">{networks}</ul>
-
-          <ul className="copyright">
-            <li>
-              Made with{" "}
-              <a title="Vladi" href="https://github.com/vladi965">
-                <i className="fa fa-heart"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
-            <i className="icon-up-open"></i>
-          </a>
+        <div className="content-footer">
+          <div className="content-title">
+            <p>Puedes escribirme al correo:</p>
+            <div className="content-email">
+              <img
+                className="img-email-icon"
+                src={iconMail}
+                alt="icono de correo electronico"
+              />
+              <span>vladisanchez96@gmail.com</span>
+            </div>
+          </div>
+          <div className="content-img-networks">
+            <div>
+              <img
+                className="img-perfil"
+                src={imagePerfil}
+                alt="imagen de perfil"
+              />
+            </div>
+            <div className="content-social">
+              <p>Sígueme</p>
+              <ul className="social-links">{networks}</ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

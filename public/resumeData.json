@@ -15,6 +15,8 @@
     "imgHtml": "html.png",
     "imgCss": "css.png",
     "imgReact": "reactjs.png",
+    "iconContact": "icon-contact.svg",
+    "iconEmail": "icon-email.svg",
     "social": [
       {
         "name": "linkedln",
@@ -28,13 +30,32 @@
         "url": "https://github.com/vladi965",
         "image": "icon-github.svg"
       }
+    ],
+    "network": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/vladi_05_96/",
+        "image": "icon-instagram.svg"
+      },
+      {
+        "name": "x",
+        "url": "https://x.com/vladi2596",
+        "image": "icon-x.svg"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/@vladiiivlogs8068",
+        "image": "icon-youtube.svg"
+      }
     ]
   },
   "about": {
-    "title": "Sobre mí",
-    "image": "###",
-    "bio": "Soy Vladimir pero mis amigos me dicen Vladii. Me considero una persona apasionada por las tecnológias y la programación, mis stack favoritos son JavaScript, React, React Native, NextJS, Android y MySQL. En mis tiempos libres me dedico a crear proyectos personales y compartir con la comunidad de programadores.",
-    "imagePerfil": "###"
+    "title": "Mí",
+    "image": "icon-about.svg",
+    "bioOne": "Soy Vladimir pero mis amigos me dicen Vladii.",
+    "bioTwo": "mis stack favoritos son JavaScript, React, React Native, NextJS, Android y MySQL.",
+    "bioThree": "En mis tiempos libres me dedico a crear proyectos personales y compartir con la comunidad de programadores.",
+    "imagePerfil": "perfil_user.png"
   },
   "work": {
     "title": "Experiencia",
@@ -65,7 +86,7 @@
     "image": "icon-proyects.svg",
     "content": [
       {
-        "titleProject": "VirtualR",
+        "titleProject": "Chat PDF AI SAAS",
         "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
         "image": "saas-with-ai.png",
         "nameOneSkill": "Vite",
@@ -77,14 +98,14 @@
         "codeTitle": "Code",
         "codeImage": "icon-github.svg",
         "codeImageHover": "icon-github-green.svg",
-        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "codeUrl": "https://github.com/vladi965/Chat-with-PDF-AI-SAAS-Challenge-App",
         "previewTitle": "Preview",
         "previewImage": "icon-preview.svg",
         "previewImageHover": "icon-preview-green.svg",
-        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+        "previewUrl": "https://chat-with-pdf-challenge-teal.vercel.app/"
       },
       {
-        "titleProject": "Portal de Transparencia BN",
+        "titleProject": "Edusity",
         "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
         "image": "edusity.png",
         "nameOneSkill": "HTML5",
@@ -96,14 +117,14 @@
         "codeTitle": "Code",
         "codeImage": "icon-github.svg",
         "codeImageHover": "icon-github-green.svg",
-        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "codeUrl": "https://github.com/vladi965/Website-Edusity-React",
         "previewTitle": "Preview",
         "previewImage": "icon-preview.svg",
         "previewImageHover": "icon-preview-green.svg",
-        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+        "previewUrl": "https://edusity-blush-nine.vercel.app/"
       },
       {
-        "titleProject": "Portal de Transparencia BN",
+        "titleProject": "VirtualR",
         "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
         "image": "virtualR.png",
         "nameOneSkill": "HTML5",
@@ -115,14 +136,14 @@
         "codeTitle": "Code",
         "codeImage": "icon-github.svg",
         "codeImageHover": "icon-github-green.svg",
-        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "codeUrl": "https://github.com/vladi965/landingPage_VirtualR",
         "previewTitle": "Preview",
         "previewImage": "icon-preview.svg",
         "previewImageHover": "icon-preview-green.svg",
-        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+        "previewUrl": "https://landing-page-virtual-r.vercel.app/"
       },
       {
-        "titleProject": "Portal de Transparencia BN",
+        "titleProject": "Portal Transparencia",
         "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
         "image": "transparencia.png",
         "nameOneSkill": "HTML5",
@@ -134,14 +155,14 @@
         "codeTitle": "Code",
         "codeImage": "icon-github.svg",
         "codeImageHover": "icon-github-green.svg",
-        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "codeUrl": "#",
         "previewTitle": "Preview",
         "previewImage": "icon-preview.svg",
         "previewImageHover": "icon-preview-green.svg",
-        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+        "previewUrl": "https://www.bn.com.pe/transparenciabn/transparencia.asp"
       },
       {
-        "titleProject": "Portal de Transparencia BN",
+        "titleProject": "Floreria Encantada",
         "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
         "image": "floreria-encantada.png",
         "nameOneSkill": "HTML5",
@@ -153,14 +174,14 @@
         "codeTitle": "Code",
         "codeImage": "icon-github.svg",
         "codeImageHover": "icon-github-green.svg",
-        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "codeUrl": "https://github.com/vladi965/Pagina-Web-Tienda-Floreria",
         "previewTitle": "Preview",
         "previewImage": "icon-preview.svg",
         "previewImageHover": "icon-preview-green.svg",
-        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+        "previewUrl": "https://floreria-encantada-demo.netlify.app/"
       },
       {
-        "titleProject": "Portal de Transparencia BN",
+        "titleProject": "AG Transporte & Serv",
         "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
         "image": "ag-transporte.png",
         "nameOneSkill": "HTML5",
@@ -172,11 +193,11 @@
         "codeTitle": "Code",
         "codeImage": "icon-github.svg",
         "codeImageHover": "icon-github-green.svg",
-        "codeUrl": "https://www.linkedin.com/in/saajansangha",
+        "codeUrl": "https://github.com/vladi965/Pagina-Web-AG",
         "previewTitle": "Preview",
         "previewImage": "icon-preview.svg",
         "previewImageHover": "icon-preview-green.svg",
-        "previewUrl": "https://www.linkedin.com/in/saajansangha"
+        "previewUrl": "https://ag-transporte-refrigerado.vercel.app/"
       }
     ]
   }
