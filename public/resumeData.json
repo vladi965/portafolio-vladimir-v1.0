@@ -65,19 +65,19 @@
         "title": "Freelance",
         "company": "-",
         "years": "Ago 2022 - Actualmente",
-        "description": "Desarrollo de páginas web, diseño y maquetación responsive aplicando HTML, CSS y JavaScript. Implementación de libreria como React y en framework de estilos TailwindCSS para crear interfaces interactivas. Optimizando el rendimiento y carga de páginas, así como integración de APIs para mejorar la comunicación entre el Front y Back. Además realice la colaboración con clientes para entender sus necesidades y garantizar un desarrollo de calidad y mejora en la interfaz de usuario (UI) y experiencia (UX)."
+        "description": "Desarrollo de páginas web y aplicaciones web utilizando tecnologias de HTML, CSS, JavaScript, React, TailwindCSS, React Router, NPM, Shadcn y Lucide para crear interfaces amigables e interactivas. Optimización de rendimiento de las plataformas e integración de APIs para mejorar la comunicación entre Front y Back. Colaboración con clientes para mejorar la interfaz de usuario (UI) y la experiencia (UX)."
       },
       {
         "title": "Locador de Servicios",
         "company": "Banco de la Nación",
         "years": "Set 2023 - Mar 2024",
-        "description": "Desarrollé un análisis de la situación actual, mapeo y segmentación de contenidos, y la estructura jerárquica visual de la plataforma de Transparencia BN. Diseñé prototipos para versiones de escritorio y móvil, y desarrollé plantillas utilizando HTML, CSS3 y JavaScript, asegurando un diseño responsive adaptado a diversos dispositivos moviles, tablet y laptop, ademas de la implementación de SEO en las plantillas y elaboré informes sobre la mejora de plataforma y la carga de información en el nuevo sitio."
+        "description": "Analicé y segmenté contenidos para la plataforma de Transparencia del Banco de la Nación, diseñé prototipos responsive y desarrollé plantillas en HTML, CSS3 y JavaScript. También implementé mejoras en SEO y elaboré informes sobre la optimización de la plataforma y la migración de contenidos."
       },
       {
         "title": "Practicante",
         "company": "Banco de la Nación",
         "years": "Set 2022 - Set 2023",
-        "description": "Publicación y actualización de noticias y canales de atención en la web del Banco. Mejora la plataforma de Noticias en modo responsive adaptado a dispositivos móviles. Apoyo en la migración de productos y servicios del Banco de la Nación a Gob.pe, coordinando con las distintas áreas para validar la información y cargar los servicios y/o productos en el CMS de Gob.pe."
+        "description": "Me encargué de la publicación y actualización de noticias y canales de atención en la web del Banco de la Nación. Optimizé la plataforma de noticias, asegurando su diseño responsive para una mejor experiencia en dispositivos móviles. Colaboré en la migración de productos y servicios del Banco a Gob.pe, coordinando con distintas áreas para validar la información y gestionar la carga de contenido en el CMS de Gob.pe."
       }
     ]
   },
@@ -86,8 +86,9 @@
     "image": "icon-proyects.svg",
     "content": [
       {
+        "id": "app",
         "titleProject": "Chat PDF AI SAAS",
-        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "description": "El proyecto consiste en la creación de un SaaS que utiliza inteligencia artificial para permitir a los usuarios subir múltiples archivos PDF....",
         "image": "saas-with-ai.png",
         "nameOneSkill": "Vite",
         "iconOneSkill": "icon-vite.png",
@@ -105,13 +106,14 @@
         "previewUrl": "https://chat-with-pdf-challenge-teal.vercel.app/"
       },
       {
+        "id": "landing",
         "titleProject": "Edusity",
-        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "description": "El proyecto consiste en la creación de una landing page que contiene información de los about, campus, program, testimonials y contact us......",
         "image": "edusity.png",
-        "nameOneSkill": "HTML5",
-        "iconOneSkill": "icon-html.png",
-        "nameTwoSkill": "CSS3",
-        "iconTwoSkill": "icon-css.png",
+        "nameOneSkill": "React",
+        "iconOneSkill": "icon-react.png",
+        "nameTwoSkill": "TailwindCSS",
+        "iconTwoSkill": "icon-tailwindcss.png",
         "nameThreeSkill": "JavaScript",
         "iconThreeSkill": "icon-javascript.png",
         "codeTitle": "Code",
@@ -124,13 +126,14 @@
         "previewUrl": "https://edusity-blush-nine.vercel.app/"
       },
       {
+        "id": "landing",
         "titleProject": "VirtualR",
-        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "description": "El proyecto consiste en la creación de una landing page que contiene información de features, workflow, pricing, testimonials, sign in y create account...",
         "image": "virtualR.png",
-        "nameOneSkill": "HTML5",
-        "iconOneSkill": "icon-html.png",
-        "nameTwoSkill": "CSS3",
-        "iconTwoSkill": "icon-css.png",
+        "nameOneSkill": "React",
+        "iconOneSkill": "icon-react.png",
+        "nameTwoSkill": "TailwindCSS",
+        "iconTwoSkill": "icon-tailwindcss.png",
         "nameThreeSkill": "JavaScript",
         "iconThreeSkill": "icon-javascript.png",
         "codeTitle": "Code",
@@ -143,8 +146,9 @@
         "previewUrl": "https://landing-page-virtual-r.vercel.app/"
       },
       {
+        "id": "web",
         "titleProject": "Portal Transparencia",
-        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "description": "El proyecto consiste en la mejora de la plataforma de transparencia BN, aplicando nuevos diseños en iconos y también en la UX y UI...",
         "image": "transparencia.png",
         "nameOneSkill": "HTML5",
         "iconOneSkill": "icon-html.png",
@@ -162,8 +166,9 @@
         "previewUrl": "https://www.bn.com.pe/transparenciabn/transparencia.asp"
       },
       {
+        "id": "web",
         "titleProject": "Floreria Encantada",
-        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "description": "El proyecto consiste en la creación de una página web conteniendo información de las flores, delivery, además esta conectado a un boton whatsapp...",
         "image": "floreria-encantada.png",
         "nameOneSkill": "HTML5",
         "iconOneSkill": "icon-html.png",
@@ -181,8 +186,9 @@
         "previewUrl": "https://floreria-encantada-demo.netlify.app/"
       },
       {
+        "id": "web",
         "titleProject": "AG Transporte & Serv",
-        "description": "Mejora de la plataforma de Transparencia BN realizando mejora en el diseño de UI y UX, aplicando tecnologias de HTML5, CSS3 y JavaScript y responsive a movil, tablet y laptop.",
+        "description": "El proyecto consiste en la creación de un página web conteniendo información de los servicios de transporte y una interfaz sencilla y amigable.....",
         "image": "ag-transporte.png",
         "nameOneSkill": "HTML5",
         "iconOneSkill": "icon-html.png",

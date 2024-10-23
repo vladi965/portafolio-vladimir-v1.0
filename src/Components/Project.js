@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import imgArrowRight from "../images/icon-right.svg";
 
-const Portfolio = ({ data }) => {
+const Project = ({ data }) => {
   const [activeCategory, setActiveCategory] = useState("todo");
 
   const handleCategoryClick = (id) => {
@@ -174,7 +174,7 @@ const Portfolio = ({ data }) => {
             {content}
           </div>
           <div className="content-url">
-            <Link to="/project">
+            <Link to="/proyectos">
               <span>Más Proyectos</span>
               <img
                 className="icons-general"
@@ -189,4 +189,4 @@ const Portfolio = ({ data }) => {
   );
 };
 
-export default Portfolio;
+export default Project;

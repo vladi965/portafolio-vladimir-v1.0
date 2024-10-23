@@ -49,7 +49,7 @@ const Header = ({ data }) => {
       var imgRedes = "images/iconos/" + network.image;
       return (
         <li key={network.name}>
-          <a href={network.url}>
+          <a target="_blank" rel="noreferrer" href={network.url}>
             <img
               className="img-redes-icon"
               src={imgRedes}
@@ -102,9 +102,11 @@ const Header = ({ data }) => {
             </a>
           </li>
         </ul>
-        <div className="d-flex">
-          <img className="icon-sun" src={iconSun} alt="icono de sol" />
-          <p>Dark</p>
+        <div>
+          <button className="d-flex">
+            <img className="icon-sun" src={iconSun} alt="icono de sol" />
+            <p>Dark</p>
+          </button>
         </div>
       </nav>
       <div className="row banner">

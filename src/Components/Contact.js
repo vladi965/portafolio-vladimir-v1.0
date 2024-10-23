@@ -6,12 +6,46 @@ const Contact = ({ data }) => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
+
+  const phoneNumber = "51923450859";
 
   if (data) {
     var iconContact = "images/iconos/" + data.iconContact;
   }
 
-  const submitForm = () => {};
+  const submitForm = (event) => {
+    event.preventDefault();
+
+    const whatsappMessage = `Datos del formulario enviados: \n\n Nombre: ${name}\n\n Apellidos: ${lastname}\n\n Teléfono: ${phone}\n\n Correo: ${email}\n\n Mensaje: ${message}`;
+
+    console.log("Datos del formulario enviados:");
+    console.log("Nombre:", name);
+    console.log("Apellidos:", lastname);
+    console.log("Teléfono:", phone);
+    console.log("Correo:", email);
+    console.log("Mensaje:", message);
+
+    // Construir la URL de WhatsApp
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappMessage}`;
+
+    // Abrir WhatsApp con la URL construida
+    window.open(whatsappURL);
+
+    //Resetear el formulario y mostrar el mensaje de exito
+    setName("");
+    setLastName("");
+    setPhone("");
+    setEmail("");
+    setMessage("");
+
+    setSuccessMessage(true);
+    setErrorMessage(false);
+
+    // Ocultar el mensaje de exito despues de 3 segundos
+    setTimeout(() => setSuccessMessage(false), 3000);
+  };
 
   return (
     <section id="contact">
@@ -34,6 +68,7 @@ const Contact = ({ data }) => {
                     <div>
                       <label htmlFor="contactName">Nombres</label>
                       <input
+                        required
                         type="text"
                         defaultValue=""
                         value={name}
@@ -46,6 +81,7 @@ const Contact = ({ data }) => {
                     <div>
                       <label htmlFor="contactLastName">Apellidos</label>
                       <input
+                        required
                         type="text"
                         defaultValue=""
                         value={lastname}
@@ -58,6 +94,7 @@ const Contact = ({ data }) => {
                     <div>
                       <label htmlFor="contactPhone">Celular</label>
                       <input
+                        required
                         type="phone"
                         defaultValue=""
                         value={phone}
@@ -70,6 +107,7 @@ const Contact = ({ data }) => {
                     <div>
                       <label htmlFor="contactEmail">Correo Electronico</label>
                       <input
+                        required
                         type="text"
                         defaultValue=""
                         value={email}
@@ -84,8 +122,9 @@ const Contact = ({ data }) => {
                   <div>
                     <label htmlFor="contactMessage">Mensaje</label>
                     <textarea
-                      cols="50"
-                      rows="15"
+                      required
+                      cols="30"
+                      rows="10"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       id="contactMessage"
@@ -94,23 +133,22 @@ const Contact = ({ data }) => {
                   </div>
 
                   <div className="content-btn-contact">
-                    <button
-                      onClick={submitForm}
-                      type="submit"
-                      className="submit"
-                    >
+                    <button type="submit" className="submit">
                       Enviar Mensaje
                     </button>
                   </div>
                 </fieldset>
               </form>
 
-              <div id="message-warning"> Error boy</div>
-              <div id="message-success">
-                <i className="fa fa-check"></i>Su mensaje se envio con exito,
-                muchas gracias!
-                <br />
-              </div>
+              {errorMessage && (
+                <div id="message-warning">Error en enviar mensaje</div>
+              )}
+              {successMessage && (
+                <p id="message-success">
+                  <i className="fa fa-check"></i> Su mensaje se envió con éxito
+                  <br />
+                </p>
+              )}
             </div>
           </div>
         </div>
