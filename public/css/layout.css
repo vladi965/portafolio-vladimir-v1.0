@@ -236,9 +236,10 @@ ul#nav li:after {
   position: absolute;
   left: 0;
   bottom: 0px;
-  transition: 0.5s;
+  transition: width 0.5s;
 }
-ul#nav li.current:after {
+ul#nav li.current:after,
+ul#nav li:hover:after {
   width: 100%;
 }
 
@@ -250,17 +251,24 @@ ul#nav li a {
   text-decoration: none;
   text-align: left;
   color: #000;
-  cursor: pointer;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
-ul#nav li a:active {
-  background-color: transparent !important;
+ul#nav li a:hover {
+  color: #00b07b;
 }
 ul#nav li.current a {
   color: #00b07b;
-  border-radius: 7px;
-  text-align: center;
+  /* border-radius: 7px;
+  text-align: center; */
   font-family: "poppins-regular", sans-serif;
+}
+ul#nav li a:active {
+  background-color: transparent !important;
 }
 
 /* Skill */
@@ -375,94 +383,6 @@ ul#nav-skill li {
   color: #000;
   margin-left: 5px;
 }
-
-/*
-.git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
-}
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
-}
-.css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
-}
-
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -618,7 +538,7 @@ ul#list-skill li a {
   color: #000;
   text-align: left;
   margin-top: 15px;
-  font-size: 25px;
+  font-size: 22px;
 }
 .portfolio-item .item-wrap a {
   display: block;
@@ -626,7 +546,7 @@ ul#list-skill li a {
 }
 .portfolio-item .item-wrap .item-description p {
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 25px;
 }
 #portfolio .content-icons ul {
@@ -742,36 +662,43 @@ ul#nav-code li:hover::after {
   justify-content: center;
   gap: 3px;
   padding: 5px 7px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 10px;
   transition: color 0.3s ease-in-out;
 }
 #portfolio .content-icons a img {
-  width: 20px;
+  width: 16px;
 }
 /* Boton de Mas Proyectos */
 #portfolio .content-url {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 #portfolio .content-url a {
   border: 1px solid #00b07b;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   background: #00b07b;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in;
 }
 #portfolio .content-url a span {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 #portfolio .content-url a img {
   width: 28px;
 }
+#portfolio .content-url a:hover {
+  background: #000000;
+  transition: all 0.3s ease-out;
+  border-color: #000000;
+}
+
 /* popup modal */
 .popup-modal {
   max-width: 550px;
@@ -1292,4 +1219,12 @@ footer .social-links li:first-child {
 }
 #go-top a:hover {
   background-color: #009c6d;
+}
+/* Modo Oscuro = Dark Mode */
+.dark-mode {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+.dark-mode ul#nav li a {
+  color: #fff;
 }

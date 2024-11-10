@@ -6,11 +6,13 @@ import WorkExperience from "./Components/WorkExperience";
 import Portfolio from "./Components/Portfolio";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Project from "./Components/Project";
 
 import "./App.css";
 
 const App = () => {
   const [resumeData, setResumeData] = useState({});
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     fetch("/resumeData.json")
@@ -20,9 +22,18 @@ const App = () => {
       });
   }, []);
 
+  // Función para alternar el modo oscuro
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <Header data={resumeData.main} />
+    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+      <Header
+        data={resumeData.main}
+        toggleDarkMode={toggleDarkMode}
+        darkMode={darkMode}
+      />
       <Portfolio data={resumeData.project} />
       <WorkExperience data={resumeData.work} />
       <About data={resumeData.about} />

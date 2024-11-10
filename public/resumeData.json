@@ -8,6 +8,7 @@
     "imageLogo": "logo-vladimir.png",
     "icon": "img-mano.png",
     "iconSun": "icon-sun.svg",
+    "iconMoon": "icon-moon.svg",
     "website": "https://drive.google.com/file/d/1ZyyDaCfojNPAVCCh-_8za1ei09Ztf-nB/view?usp=sharing",
     "resumedownload": "https://drive.google.com/file/d/1ZyyDaCfojNPAVCCh-_8za1ei09Ztf-nB/view?usp=sharing",
     "imgJavaScript": "javascript.png",
@@ -108,7 +109,7 @@
       {
         "id": "landing",
         "titleProject": "Edusity",
-        "description": "El proyecto consiste en la creación de una landing page que contiene información de los about, campus, program, testimonials y contact us......",
+        "description": "El proyecto consiste en la creación de una landing page que contiene información de los about, campus, program, testimonials....",
         "image": "edusity.png",
         "nameOneSkill": "React",
         "iconOneSkill": "icon-react.png",
@@ -128,7 +129,7 @@
       {
         "id": "landing",
         "titleProject": "VirtualR",
-        "description": "El proyecto consiste en la creación de una landing page que contiene información de features, workflow, pricing, testimonials, sign in y create account...",
+        "description": "El proyecto consiste en la creación de una landing page que contiene información de features, workflow, pricing, testimonials...",
         "image": "virtualR.png",
         "nameOneSkill": "React",
         "iconOneSkill": "icon-react.png",
@@ -148,7 +149,7 @@
       {
         "id": "web",
         "titleProject": "Portal Transparencia",
-        "description": "El proyecto consiste en la mejora de la plataforma de transparencia BN, aplicando nuevos diseños en iconos y también en la UX y UI...",
+        "description": "El proyecto consiste en la mejora de la plataforma de transparencia BN, aplicando nuevos diseños en iconos y en la UX y UI...",
         "image": "transparencia.png",
         "nameOneSkill": "HTML5",
         "iconOneSkill": "icon-html.png",
@@ -168,7 +169,7 @@
       {
         "id": "web",
         "titleProject": "Floreria Encantada",
-        "description": "El proyecto consiste en la creación de una página web conteniendo información de las flores, delivery, además esta conectado a un boton whatsapp...",
+        "description": "El proyecto consiste en la creación de una página web conteniendo información de las flores, delivery, los precios....",
         "image": "floreria-encantada.png",
         "nameOneSkill": "HTML5",
         "iconOneSkill": "icon-html.png",
@@ -188,7 +189,7 @@
       {
         "id": "web",
         "titleProject": "AG Transporte & Serv",
-        "description": "El proyecto consiste en la creación de un página web conteniendo información de los servicios de transporte y una interfaz sencilla y amigable.....",
+        "description": "El proyecto consiste en la creación de una página web conteniendo información de los servicios, los transportes, valores...",
         "image": "ag-transporte.png",
         "nameOneSkill": "HTML5",
         "iconOneSkill": "icon-html.png",

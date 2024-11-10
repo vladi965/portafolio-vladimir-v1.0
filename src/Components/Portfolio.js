@@ -170,7 +170,7 @@ const Portfolio = ({ data }) => {
             </ul>
           </div>
 
-          <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-fours cf">
+          <div id="portfolio-wrapper" className="bgrid-thirty s-bgrid-fours cf">
             {content}
           </div>
           <div className="content-url">

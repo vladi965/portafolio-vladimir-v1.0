@@ -806,6 +806,7 @@ input[type="checkbox"] {
 .column,
 .columns {
   position: relative;
+  margin-left: 16px;
   padding: 0 20px;
   min-height: 1px;
   float: left;
@@ -980,11 +981,14 @@ input[type="checkbox"] {
 .bgrid-quarters [class*="column"] {
   width: 25%;
 }
+.bgrid-thirty [class*="column"] {
+  width: 30.33333%;
+}
 .bgrid-thirds [class*="column"] {
   width: 33.33333%;
 }
 .bgrid-fours [class*="column"] {
-  width: 41%;
+  width: 40%;
 }
 .bgrid-halves [class*="column"] {
   width: 50%;
@@ -1005,8 +1009,17 @@ properly.
   clear: none;
 } /* first column in smaller screens */
 
-/* smaller screens
+/* Responsive screens
 --------------------------------------------------------------- */
+
+/* larger screens
+--------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .wide .row {
+    max-width: 1180px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   /* block grids on small screens */
   .s-bgrid-sixths [class*="column"] {
@@ -1104,14 +1117,6 @@ properly.
 @media only screen and (max-width: 460px) {
   .row {
     width: auto;
-  }
-}
-
-/* larger screens
---------------------------------------------------------------- */
-@media screen and (min-width: 1200px) {
-  .wide .row {
-    max-width: 1180px;
   }
 }
 

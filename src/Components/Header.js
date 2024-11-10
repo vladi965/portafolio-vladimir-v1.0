@@ -1,40 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const Header = ({ data }) => {
-  const [activeSection, setActiveSection] = useState("home");
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.6,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
-
+const Header = ({ data, toggleDarkMode, darkMode }) => {
   if (data) {
     var perfilImg = "images/" + data.image;
     var imageLogo = "images/" + data.imageLogo;
     var iconHand = "images/" + data.icon;
     var iconSun = "images/iconos/" + data.iconSun;
+    var iconMoon = "images/iconos/" + data.iconMoon;
     var imgJavaScript = "images/iconos/" + data.imgJavaScript;
     var imgNextjs = "images/iconos/" + data.imgNextjs;
     var imgHtml = "images/iconos/" + data.imgHtml;
@@ -65,47 +37,51 @@ const Header = ({ data }) => {
   return (
     <header id="home">
       <nav id="nav-wrap">
-        <div className="content-image">
-          <img src={imageLogo} alt="Logo Vladimir" />
-        </div>
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
         <a className="mobile-btn" href="#home" title="Hide navigation">
           Hide navigation
         </a>
+        <div className="content-image">
+          <img src={imageLogo} alt="Logo Vladimir" />
+        </div>
 
         <ul id="nav" className="nav">
-          <li className={activeSection === "home" ? "current" : ""}>
+          <li>
             <a className="smoothscroll" href="#home">
               Home
             </a>
           </li>
-          <li className={activeSection === "portfolio" ? "current" : ""}>
+          <li>
             <a className="smoothscroll" href="#portfolio">
               Proyectos
             </a>
           </li>
-          <li className={activeSection === "work" ? "current" : ""}>
+          <li>
             <a className="smoothscroll" href="#work">
               Experiencia
             </a>
           </li>
-          <li className={activeSection === "about" ? "current" : ""}>
+          <li>
             <a className="smoothscroll" href="#about">
               Sobre Mí
             </a>
           </li>
-          <li className={activeSection === "contact" ? "current" : ""}>
+          <li>
             <a className="smoothscroll" href="#contact">
               Contacto
             </a>
           </li>
         </ul>
         <div>
-          <button className="d-flex">
-            <img className="icon-sun" src={iconSun} alt="icono de sol" />
-            <p>Dark</p>
+          <button className="d-flex" onClick={toggleDarkMode}>
+            <img
+              className="icon-sun"
+              src={darkMode ? iconMoon : iconSun}
+              alt={darkMode ? "Modo Oscuro" : "Modo Claro"}
+            />
+            <p>{darkMode ? "Light" : "Dark"}</p>
           </button>
         </div>
       </nav>
